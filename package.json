@@ -1,7 +1,7 @@
 {
   "name": "maventrack",
   "version": "0.1.0",
-  "description": "A command line tool to track your time to Mavenlink",
+  "description": "Track your time on Mavenlink directly form the command line.",
   "main": "index.js",
   "scripts": {
     "test": "grunt test"
@@ -36,6 +36,10 @@
   },
   "dependencies": {
     "oauth": "^0.9.12",
-    "open": "0.0.5"
+    "open": "0.0.5",
+    "q": "^1.1.1",
+    "commander": "^2.5.0",
+    "prompt": "^0.2.14",
+    "moment": "^2.8.4"
   }
 }
