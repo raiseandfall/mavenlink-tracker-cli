@@ -2,6 +2,10 @@
   "name": "maventrack",
   "version": "0.1.0",
   "description": "Track your time on Mavenlink directly form the command line.",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/raiseandfall/mavenlink-tracker-cli.git"
+  },
   "main": "index.js",
   "scripts": {
     "test": "grunt test"
