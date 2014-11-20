@@ -1,6 +1,6 @@
 # MAVENTRACK v0.1
 
-Track your time on Mavenlink directly form the command line.
+Track your time on Mavenlink directly from the command line.
 
 ## CHANGELOG
 
@@ -8,4 +8,4 @@ Track your time on Mavenlink directly form the command line.
 
 ## CONTRIBUTE
 
-[Markdown here](CONTRIBUTION.md)
+[Markdown here](CONTRIBUTE.md)
