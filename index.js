@@ -2,22 +2,17 @@
 
 'use strict';
 
-var events = require('events'),
-  evt = new events.EventEmitter(),
-  mavenApi = require('./lib/mavenapi'),
-  Tracker = require('./lib/tracker'),
-  pr = require('prompt');
+var events  = require('events'),
+  evt       = new events.EventEmitter(),
+  mavenApi  = require('./lib/mavenapi'),
+  Tracker   = require('./lib/tracker'),
+  pr        = require('prompt');
 
 // Start prompt
 pr.start();
 
-// @TODO: check if OAuth Access Token already exists
-
-mavenApi.init(evt);
-mavenApi.auth();
+// When authenticated
 evt.on('authenticated', function (token) {
-  console.log('authenticated', token);
-  // Test API Call
   // Test API Call
   var track = new Tracker(token);
   track.track(function(data) {
@@ -26,3 +21,6 @@ evt.on('authenticated', function (token) {
     console.log('Something went wrong', err);
   });
 });
+
+// Authenticate user
+mavenApi.auth(evt);
