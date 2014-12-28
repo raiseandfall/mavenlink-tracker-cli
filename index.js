@@ -7,9 +7,6 @@ var events  = require('events'),
   mavenApi  = require('./lib/mavenapi'),
   Tracker   = require('./lib/tracker');
 
-// Start prompt
-pr.start();
-
 // When authenticated
 evt.on('authenticated', function (token) {
   var track = new Tracker(token);
