@@ -1,4 +1,4 @@
-# MAVENTRACK v0.1
+# MAVENTRACK v0.3.1
 
 Track your time on Mavenlink directly from the command line.
 
